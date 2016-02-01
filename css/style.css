@@ -8,7 +8,9 @@
  h1, h2, h3, h4, h5, h6 {
    font-family: "Varela Round", Helvetica, Arial, sans-serif;
  }
-
+ h1 {
+    color:#33cc33;
+ }
  h2 {
    font-size:28px;
    font-weight: normal;
@@ -42,15 +44,14 @@
    min-height: 1px;
    margin:0 2% 20px;
  }
+  /* Media Query */
+ 
   @media (min-width: 768px) {
    .container {
      width: 750px;
    }
-
- 
- /* Media Query */
-
- @media (min-width: 992px) {
+ }
+  @media (min-width: 992px) {
    .container {
      width: 970px;
    }
@@ -63,12 +64,18 @@
    .one-fourth {
      width:21%;
    }
- }
- @media (min-width: 1200px) {
+   @media (min-width: 1200px) {
    .container {
      width: 1170px;
    }
- }   /* HEADER */
+ }
+  @media (min-width: 2400px) {
+   .container {
+     width: 2340px;
+   }
+}
+
+ /* HEADER */
  header {
    color:#FFFFFF;
    background: #34495E;
