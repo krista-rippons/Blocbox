@@ -271,7 +271,7 @@
  }
 
  .lower-box {
-		 margin-top:20px;
+		 margin-tpx;
  }
  	/* Media Query */
  
@@ -313,4 +313,39 @@
 	 font-size: 60px;
 	 line-height: 60px;
 	 margin:25px 0 40px;
+ }
+
+ /* FOOTER */
+ 
+ footer {
+   background-color: #34495E;
+   background-image: linear-gradient(to top,
+      #3498DB 0%, #3498DB 50%, #34495E 50%, #34495E 100%);
+   color: #FFFFFF;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+ }
+ footer p, footer nav ul {
+   font-size:14px;
+   font-weight:100;
+   text-align: center;
+   margin: 10px auto 0;
+ }
+ footer nav ul li {
+   list-style-type: none;
+   display: inline;
+ }
+ footer nav ul li a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ footer .right-footer-block {
+   background-color: transparent;
+ }
+ footer .logo{
+   padding: 2.35em 0;
+   margin: 0 auto;
+   display: block;
  }
