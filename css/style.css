@@ -270,9 +270,7 @@
 	 margin-top: 30px;
  }
 
- .lower-box {
-		 margin-tpx;
- }
+
 
  /* FOOTER */
 
@@ -330,6 +328,9 @@
 	 .one-fourth {
 		 width:21%;
 	 }
+	.lower-box {
+		margin-top: 20px;
+ 	}
  }
  
 	 @media (min-width: 1200px) {
@@ -351,7 +352,7 @@
 			 line-height: 60px;
 			 margin:25px 0 40px;
  }
- @media (min-width: 991px){
+ @media (min-width: 991 px){
    footer{
      background-color: #3498DB;
      background-image: linear-gradient(to left,
