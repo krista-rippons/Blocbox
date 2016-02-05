@@ -421,6 +421,8 @@
  .item-box {
    display:block;
    height:230px;
+   /* WHY ISN'T WIDTH DEFINED? -- I ADDED IT. */
+   width:230px;
    background: #FFFFFF;
    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
    position: relative;
@@ -524,7 +526,7 @@
    }
 }
 
-/* Larger Mobile Devices - for content only */
+/* Larger Mobile Devices */
  @media (min-width:460px) {
    .content {
      padding:1.5em 1%;
@@ -571,4 +573,3 @@
      margin:0 1% 25px;
    }
  }
-≈
