@@ -352,7 +352,7 @@
 			 line-height: 60px;
 			 margin:25px 0 40px;
  }
- @media (min-width: 991 px){
+ @media (min-width: 992 px){
    footer{
      background-color: #3498DB;
      background-image: linear-gradient(to left,
@@ -369,6 +369,7 @@
    footer .logo{
      padding: 2em 0 2em 1.5em;
    }
+}
 
 
  
