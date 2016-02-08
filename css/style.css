@@ -498,6 +498,7 @@
 		 width: 2340px;
 
 	 }
+	}
 		 header .hero h1 {
 			 font-size:96px;
 			 	 margin:200px 0 0;
@@ -540,7 +541,19 @@
      float:left;
      display:block;
    }
- }
+
+/* Added to adjust image "dashboard-shot" size */
+   header .image {
+   		width:10px;
+	}
+
+/* Added to adjust logo size */
+
+	header .logo{
+		width:46%;
+	 }
+}
+
 /* Tablets */
  @media (min-width:768px) {
    .content {
