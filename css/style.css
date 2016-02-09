@@ -405,7 +405,10 @@ footer .logo {
 	display: block;
 	text-align: center;
 }
-
+/* added to adjust size of logo on left nav dashboard and images */
+.left-nav .site-logo img{
+	width: 150px;
+}
 .left-nav .items {
 	padding: 0 6%;
 }
