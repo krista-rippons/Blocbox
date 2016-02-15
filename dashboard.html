@@ -12,19 +12,26 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/dropit.css">
+</head>
+
 </head>
 
 <body class="dashboard">
+   <!-- RESPONSIVE NAV -->
+	<a class="hamburger" id="menu" href="#">&#9776;</a>
+
+
 	<!-- LEFT NAV -->
 	<nav id="left-nav" class="left-nav">
 		<a href="#" class="site-logo"><img src="images/blocbox-logo.png"></a>
 		<div class="items">
 			<p>Items</p>
 			<ul>
-				<li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
-				<li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
-				<li><a href="images.html"><i class="fa fa-picture-o"></i> Images</a></li>
-				<li><a href="#"><i class="fa fa-link"></i> Links</a></li>
+					<li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
+					<li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
+					<li><a href="images.html"><i class="fa fa-picture-o"></i> Images</a></li>
+					<li><a href="#"><i class="fa fa-link"></i> Links</a></li>
 			</ul>
 			<p>Boxes</p>
 			<ul>
@@ -41,13 +48,23 @@
 	</nav>
 	<main role="main">
 		<!-- Content -->
+		<!-- Added from Bloc code per jquery dropit code suggestion to add dropdown list -->
 		<section class="content">
-			<div class="container">
-				<div class="header">
-					<h1>All Items</h1>
-					<a href="#" class="btn">+ Add</a>
-				</div>
-			</div>
+		    <div class="container">
+		    	<div class="header">
+		        	<h1>All Items</h1>
+		            <ul class="menu">
+		            	<li>
+		              		<a href="#" class="btn">+ Add</a>
+		            		<ul>
+		                		<li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+		                		<li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+		                		<li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+		             		</ul>
+		            	</li>
+		          	</ul>
+		        </div>
+		      </div>
 			<div class="container">
 				<div class="content-item">
 					<div class="item-box">
@@ -63,7 +80,7 @@
 				<div class="content-item">
 					<div class="item-box">
 						<h2><a href="#">Need to find a designer</a>
-</h2>
+						</h2>
 						<p>We have a one-person design team, but are ready to expand. We need to look for a second designer right now so we can continue to grow.</p>
 						<p>Put your recommendations here so we can view all of them...</p>
 					</div>
@@ -110,6 +127,13 @@
 			</div>
 		</section>
 	</main>
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/dropit.js"></script>
+	<script type="text/javascript">
+		$(".menu").dropit();
+		$( "#menu" ).click(function() {
+        	$("#left-nav").toggleClass("open", 200);
+     });
+	</script>
 </body>
-
 </html>
