@@ -490,6 +490,11 @@ footer .logo {
 	margin-right: 8px;
 }
 
+/*Krista's attempt to isolate All Items and create active class */
+.left-nav .items .active  .fa fa-th-large ul li a i {
+	font-weight: 300;
+}
+
 
 
 /* LEFT NAVBAR SETTINGS */
