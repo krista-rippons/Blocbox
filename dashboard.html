@@ -26,15 +26,13 @@
 	<nav id="left-nav" class="left-nav">
 		<a href="#" class="site-logo"><img src="images/blocbox-logo.png"></a>
 		<div class="items">
-			<div class="active"
 				<p>Items</p>
 				<ul>
-					<li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
+					<li><a class="active" href="#"><i class="fa fa-th-large"></i> All Items</a></li>
 					<li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
 					<li><a href="images.html"><i class="fa fa-picture-o"></i> Images</a></li>
 					<li><a href="#"><i class="fa fa-link"></i> Links</a></li>
 				</ul>
-			</div>
 				<p>Boxes</p>
 				<ul>
 					<li><a href="#"><i class="fa fa-inbox"></i> Landing Pages</a></li>
@@ -49,7 +47,7 @@
 			<ul class="acctsettings">
 				<li>
 				<a href="#"><i class="fa fa-cog"></i></a>
-					<ul>
+					<ul class="dropit-right">
 						<li><a href="#"><i class="fa fa-gear"></i> Account Settings</a></li>
 						<li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
 						<li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>	
@@ -145,14 +143,9 @@
 		$(".menu").dropit();
 		$( "#menu" ).click(function() {
         	$("#left-nav").toggleClass("open", 200);
-     });   	
-    </script>
-
-    <script type="text/javascript">    
+     	});   	   
         $(".acctsettings").dropit();
-        $( ".acctsettings" ).click(function() {
-        	$("#left-nav").toggleClass(#open", 200);
-	});
-	</script>
+   
+   	</script>
 </body>
 </html>

@@ -491,8 +491,8 @@ footer .logo {
 }
 
 /*Krista's attempt to isolate All Items and create active class */
-.left-nav .items .active  .fa fa-th-large ul li a i {
-	font-weight: 300;
+.left-nav .items ul li a.active {
+	font-weight: 700;
 }
 
 
