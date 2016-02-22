@@ -94,4 +94,11 @@
 
     $.fn.dropit.settings = {};
 
+    // Close if mouse outside - Krista added but doesn't work
+    $el.mouseleave(function() {
+    settings.beforeHide.call(this);
+    $('.dropit-open').removeClass('dropit-open').find('.dropit-submenu').hide();
+    settings.afterHide.call(this);
+    });
+
 })(jQuery);
